@@ -19,7 +19,7 @@ app.get('/api/people', function(req, res) {
     const name = req.query.name;
 
     if (name) {
-        // Find contact whose name includes the query string (case-insensitive)
+        // Find contact whose name includes the query string (case-insensitive).
         const matchingPeople = data.people
             .filter(contact => contact.name.toLowerCase().includes(name.toLowerCase()))
             .map(contact => {
@@ -30,14 +30,14 @@ app.get('/api/people', function(req, res) {
             });
 
         if (matchingPeople.length > 0) {
-            // Return the matching contact if found
+            // Return the matching contacts if found.
             res.json(matchingPeople);
         } else {
-            // Return a 404 error if no matching people are found
+            // Return a 404 error if no matching people are found.
             res.status(404).json({ message: 'No match found with the given name.' });
         }
     } else {
-        // If no name is provided, return the entire list
+        // If no name is provided, return the entire list.
         res.json(data.people.map(contact => {
             return {
                 id: contact.id,
@@ -51,19 +51,19 @@ app.get('/api/people/profile', function(req, res) {
     const id = req.query.id;
 
     if (!id) {
-        // Return an error message if no id is provided
+        // Return an error message if no id is provided.
         res.status(400).json({ message: 'Error: Contact ID is required.' });
-        return; // Stop further execution
+        return;
     }
 
-    // Find the contact with the matching id
+    // Find the contact with the matching id.
     const contact = data.people.find(contact => contact.id === parseInt(id));
 
     if (contact) {
-        // Return the contact if found
+        // Return the contact if found.
         res.json(contact);
     } else {
-        // Return a 404 error if no contact is found with that id
+        // Return a 404 error if no contact is found with that id.
         res.status(404).json({ message: 'Contact not found' });
     }
 });
