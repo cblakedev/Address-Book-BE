@@ -1,6 +1,9 @@
 Programming Exercise: Address Book
 ---
 
+This is a copy of the original Address Book server. The people.json file have been updated to a bigger dataset
+and the server.js file have been updated to have a more robust query functionality.
+
 ## Setup
 1. Install NodeJS
 2. Install Dependencies
