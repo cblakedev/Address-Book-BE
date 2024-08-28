@@ -177,32 +177,13 @@
                 }
             ],
 
-            "workExperience": [
-                {
-                    "institution": "United Products",
-                    "startYear": 1998,
-                    "endYear": null,
-                    "title": "Directory of IT"
-                },
-                {
-                    "institution": "United Products",
-                    "startYear": 1990,
-                    "endYear": 1998,
-                    "title": "Lead Developer"
-                },
-                {
-                    "institution": "IBM",
-                    "startYear": 1985,
-                    "endYear": 1990,
-                    "title": "Software Developer"
-                }
-            ]
+            "workExperience": []
         },
         {
             "id": 5,
             "name": "Bob Schneider",
             "image": "",
-            "phoneNumber": "123-123-1234",
+            "phoneNumber": "",
             "email": "bob.schneider@mail.com",
             "education": [
                 {
@@ -251,7 +232,7 @@
             "name": "Chris Buckley",
             "image": "https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "phoneNumber": "123-123-1234",
-            "email": "chris.buckley@mail.com",
+            "email": "",
             "education": [
                 {
                     "institution": "Clemson University",
@@ -402,15 +383,7 @@
             "image": "",
             "phoneNumber": "123-123-1234",
             "email": "beth.adams@mail.com",
-            "education": [
-                {
-                    "institution": "Clemson University",
-                    "startYear": 1989,
-                    "endYear": 1993,
-                    "degree": "Bachelor's, Computer Science"
-                }
-            ],
-
+            "education": [],
             "workExperience": [
                 {
                     "institution": "Food Inc.",
